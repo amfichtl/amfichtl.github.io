@@ -1,0 +1,699 @@
+/* ==================================================
+   GRUND-EINSTELLUNGEN
+   ================================================== */
+
+body {
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+
+    color: #222;
+    background-color: #fff;
+
+    margin: 0;
+}
+
+
+/* ==================================================
+   HAUPT-INHALT
+   ================================================== */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ==================================================
+   ÜBERSCHRIFTEN
+   ================================================== */
+
+h1 {
+    font-size: 2em;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 2px;
+    text-decoration: underline;
+}
+
+
+/* ==================================================
+   TEXT
+   ================================================== */
+
+p {
+    margin-bottom: 0;
+}
+
+
+/* ==================================================
+   BILDER
+   ================================================== */
+
+/* Alle normalen Bilder */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    margin-left: auto;
+}
+
+
+/* ==================================================
+   GEGENSTANDS-BILDER
+   Diese Bilder werden weiterhin speziell behandelt
+   ================================================== */
+
+.gegenstand {
+    width: auto;
+    height: 300px;
+
+    margin-left: 50px;
+    margin-right: 0;
+
+    border: 3px solid rgb(100, 97, 97);
+    outline-offset: 6px;
+
+    box-shadow:
+        0 0 0 8px rgb(118, 117, 117),
+        0 0 0 20px rgb(91, 91, 91);
+}
+
+
+/* ==================================================
+   AUDIO
+   ================================================== */
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0 30px 0;
+}
+
+
+/* ==================================================
+   ZEILE MIT TEXT UND BILD
+   ================================================== */
+
+.zeile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 0;
+    gap: 30px;
+}
+
+.zeile p {
+    flex: 1;
+}
+
+.zeile img {
+    max-width: 280px;
+    max-height: 140px;
+    height: auto;
+
+    margin-left: 30px;
+}
+
+
+/* ==================================================
+   ALLGEMEINE BUTTONS
+   ================================================== */
+
+button {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.2rem;
+
+    padding: 12px 20px;
+    margin: 10px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9fc5ed;
+    border-color: #555;
+}
+
+
+/* ==================================================
+   AUDIO-ZEILEN
+   ================================================== */
+
+.audio-zeile {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 60px;
+
+    position: relative;
+}
+
+
+/* ==================================================
+   AUDIO-SPALTE
+   ================================================== */
+
+.audio-button {
+    background-color: transparent;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* ==================================================
+   TEXTBEREICH
+   ================================================== */
+
+.audio-text {
+    background-color: transparent;
+    padding-right: 30px;
+}
+
+
+/* ==================================================
+   GRAUER BEREICH LINKS
+   ================================================== */
+
+.audio-zeile::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    right: calc(100% - 70px - 20px);
+
+    width: 50vw;
+
+    background-color: #eeeeee;
+
+    z-index: -1;
+}
+
+
+/* ==================================================
+   GRAUER BEREICH RECHTS
+   ================================================== */
+
+.audio-zeile::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 100%;
+
+    width: 50vw;
+
+    background-color: #eeeeee;
+
+    z-index: -1;
+}
+
+
+/* ==================================================
+   AUDIOBUTTON
+   Immer rund
+   ================================================== */
+
+.audio-start {
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-variant-emoji: text;
+
+    width: 60px;
+    height: 60px;
+
+    min-width: 60px;
+    min-height: 60px;
+
+    max-width: 60px;
+    max-height: 60px;
+
+    padding: 0;
+    margin: 10px;
+
+    border-radius: 50%;
+    border: 2px solid #575656;
+
+    background-color: #ffffff;
+
+    font-size: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease;
+}
+
+
+/* ==================================================
+   AUDIO WIRD ABGESPIELT
+   ================================================== */
+
+.audio-start.abspielen {
+    background-color: #589af5;
+}
+
+
+/* ==================================================
+   EINLEITUNG
+   ================================================== */
+
+.einleitung {
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+
+/* ==================================================
+   EINLEITUNG UNTEN
+   ================================================== */
+
+.einleitung.unten {
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+
+/* ==================================================
+   NAVIGATION
+   ================================================== */
+
+.navigation {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 0;
+    margin-bottom: 45px;
+
+    text-align: center;
+
+    gap: 20px;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* ==================================================
+   NAVIGATION-BUTTONS
+   ================================================== */
+
+.navigation button {
+    font-family: "Noto Sans", Arial, sans-serif;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 10px 18px;
+    margin: 0;
+
+    color: #222;
+
+    background-color: #fff;
+
+    border: 1px solid #999;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease;
+}
+
+
+/* ==================================================
+   GRAUE BEREICHE OBEN UND UNTEN
+   ================================================== */
+
+.grau-bereich {
+    background-color: #eeeeee;
+
+    width: 100vw;
+
+    position: relative;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    box-sizing: border-box;
+
+    padding-left: max(
+        20px,
+        calc((100vw - 900px) / 2)
+    );
+
+    padding-right: max(
+        20px,
+        calc((100vw - 900px) / 2)
+    );
+}
+
+
+/* ==================================================
+   OBERER GRAUER BEREICH
+   ================================================== */
+
+.grau-bereich.oben {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+/* ==================================================
+   UNTERER GRAUER BEREICH
+   ================================================== */
+
+.grau-bereich.unten {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+/* ==================================================
+   GRAUER BEREICH NACH RECHTS
+   ================================================== */
+
+.grau-bereich.oben::after,
+.grau-bereich.unten::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 100%;
+
+    width: 50vw;
+
+    background-color: #eeeeee;
+
+    z-index: -1;
+}
+
+
+/* ==================================================
+   PFEIL-BUTTONS
+   ================================================== */
+
+.nav-pfeil {
+    width: 60px;
+    height: 60px;
+
+    padding: 0 !important;
+    margin: 0;
+
+    border: 2px solid #555 !important;
+    border-radius: 50% !important;
+
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease;
+}
+
+
+/* ==================================================
+   PFEIL NACH LINKS
+   ================================================== */
+
+.nav-pfeil.links {
+    background: #f4f2cf !important;
+}
+
+
+/* ==================================================
+   PFEIL NACH RECHTS
+   ================================================== */
+
+.nav-pfeil.rechts {
+    background: #f9d9be !important;
+}
+
+
+/* ==================================================
+   HOVER LINKS
+   ================================================== */
+
+.nav-pfeil.links:hover {
+    background: #9fc5ed !important;
+    border-color: #222 !important;
+}
+
+
+/* ==================================================
+   HOVER RECHTS
+   ================================================== */
+
+.nav-pfeil.rechts:hover {
+    background: #9fc5ed !important;
+    border-color: #222 !important;
+}
+
+
+/* ==================================================
+   LINKES DREIECK
+   ================================================== */
+
+.nav-pfeil.links::before {
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid #222;
+
+    margin-right: 3px;
+}
+
+
+/* ==================================================
+   RECHTES DREIECK
+   ================================================== */
+
+.nav-pfeil.rechts::before {
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #222;
+
+    margin-left: 3px;
+}
+
+
+/* ==================================================
+   ERKLÄRUNG DER BUTTONS
+   ================================================== */
+
+.button-erklaerung p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* ==================================================
+   TEXT IN DER BUTTON-ERKLÄRUNG
+   ================================================== */
+
+.button-erklaerung .audio-text {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+
+/* ==================================================
+   ABSTÄNDE DER ABSÄTZE
+   ================================================== */
+
+.button-erklaerung .audio-text p {
+    margin: 0;
+}
+
+
+/* ==================================================
+   KLEINE BEISPIEL-BUTTONS
+   ================================================== */
+
+.button-erklaerung .nav-pfeil,
+.button-erklaerung .beispiel-audio {
+    width: 35px;
+    height: 35px;
+
+    min-width: 35px;
+    min-height: 35px;
+
+    padding: 0;
+    margin: 0 0 0 8px;
+
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+
+/* ==================================================
+   KLEINES LINKES DREIECK
+   ================================================== */
+
+.button-erklaerung .nav-pfeil.links::before {
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-right-width: 9px;
+}
+
+
+/* ==================================================
+   KLEINES RECHTES DREIECK
+   ================================================== */
+
+.button-erklaerung .nav-pfeil.rechts::before {
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-left-width: 9px;
+}
+
+
+/* ==================================================
+   KLEINER AUDIOBUTTON IN DER ERKLÄRUNG
+   ================================================== */
+
+.button-erklaerung .beispiel-audio {
+    font-size: 18px;
+}
+
+
+/* ==================================================
+   FARBEN DER KLEINEN BEISPIEL-PFEILE
+   ================================================== */
+
+.button-erklaerung .nav-pfeil.links {
+    background: #f4f2cf !important;
+}
+
+.button-erklaerung .nav-pfeil.rechts {
+    background: #f9d9be !important;
+}
+
+
+/* ==================================================
+   SMARTPHONE
+   ================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .grau-bereich {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/* ==================================================
+   NAVIGATION-PLATZHALTER
+   ================================================== */
+
+.nav-pfeil.platzhalter {
+    width: 60px;
+    height: 60px;
+
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   BILDER IM TEXTBEREICH
+   ================================================== */
+
+.audio-text img:not(.gegenstand) {
+    position: relative;
+    left: -40px;
+}
+
+
+/* ==================================================
+   LINK ZU DEN PROJEKTINFORMATIONEN
+   ================================================== */
+
+.projekt-link-bereich {
+    text-align: right;
+
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.projekt-link {
+    font-family: "Noto Sans", Arial, sans-serif;
+
+    font-size: 16px;
+
+    color: #222;
+
+    text-decoration: underline;
+}
+
+.projekt-link:hover {
+    color: #555;
+}
