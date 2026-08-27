@@ -697,3 +697,49 @@ button:hover {
 .projekt-link:hover {
     color: #555;
 }
+
+
+/* ==================================================
+   COPYRIGHT UNTER GEGENSTANDS-BILDERN
+   ================================================== */
+
+
+
+.gegenstand-bild {
+    width: fit-content;
+    margin-left: 50px;
+}
+
+.gegenstand {
+    width: auto;
+    height: 300px;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    border: 3px solid rgb(100, 97, 97);
+    outline-offset: 6px;
+
+    box-shadow:
+        0 0 0 8px rgb(118, 117, 117),
+        0 0 0 20px rgb(91, 91, 91);
+}
+
+.bild-copyright {
+    width: 100%;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    line-height: 1.4;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bild-copyright summary {
+    cursor: pointer;
+}
+
+.copyright-details {
+    margin-top: 8px;
+}
