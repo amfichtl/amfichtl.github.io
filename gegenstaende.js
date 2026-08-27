@@ -5,9 +5,14 @@ const gegenstaende = {
     // ==================================================
 
     1: {
-        titel: "1. Komischer Gegenstand",
+        titel: "1. Seltsamer Gegenstand",
         bild: "bilder/1_obj.png",
-        alt: "Der erste komische Gegenstand. Der Gegenstand ist braun. Er hat oben ein Loch. Auf dem Gegenstand ist ein Relief. Das bedeutet: Es gibt hohe Stellen. Und: Es gibt tiefe Stellen. Das Relief zeigt Pflanzen und einen Vogel.",
+        // Copyright des Bildes
+        copyright: {
+            lang: "Teedose, um 1711-15 (Modell), um 1711-15 (Ausformung), Böttgersteinzeug, 12 x 11 cm, 280g, Meissen Porzellan-Stiftung, Bearbeitung des 3D-Models: Andreas Bauer.",
+            kurz: "© Meissen Porzellan-Stiftung, Bearbeitung des 3D-Models: Andreas Bauer."
+        },
+        alt: "Der erste seltsame Gegenstand. Der Gegenstand ist braun. Er hat oben ein Loch. Auf dem Gegenstand ist ein Relief. Das bedeutet: Es gibt hohe Stellen. Und: Es gibt tiefe Stellen. Das Relief zeigt Pflanzen und einen Vogel.",
 
         // --------------------------------------------------
         // AUDIO
@@ -146,9 +151,14 @@ const gegenstaende = {
     // ==================================================
 
     2: {
-        titel: "2. Komischer Gegenstand",
+        titel: "2. Seltsamer Gegenstand",
         bild: "bilder/2_obj.png",
-        alt: "Der zweite komische Gegenstand. Der Gegenstand ist braun. Er sieht aus wie eine Vase. Er hat einen langen Hals und einen dicken Bauch. An dem Bauch ist der Kopf von einem Tier.",
+        // Copyright des Bildes
+        copyright: {
+            lang: "Sakeflasche mit Tierkopfausguss, um 1715 (Modell), 1715 (Ausformung),  Böttgersteinzeug, 20,3 x 13 x 10,5 cm, 280g, Meissen Porzellan-Stiftung, Bearbeitung des 3D-Models: Andreas Bauer.",
+            kurz: "© Meissen Porzellan-Stiftung, Bearbeitung des 3D-Models: Andreas Bauer."
+        },
+        alt: "Der zweite seltsame Gegenstand. Der Gegenstand ist braun. Er sieht aus wie eine Vase. Er hat einen langen Hals und einen dicken Bauch. An dem Bauch ist der Kopf von einem Tier.",
 
         // --------------------------------------------------
         // AUDIO
@@ -259,9 +269,14 @@ const gegenstaende = {
     // ==================================================
 
     3: {
-        titel: "3. Komischer Gegenstand",
+        titel: "3. Seltsamer Gegenstand",
         bild: "bilder/3_obj.png",
-        alt: "Der dritte komische Gegenstand. Der Gegenstand ist weiß und sieht aus wie ein Vogel. Der Vogel sitzt. Er hat den Schwanz erhoben. Seine Flügel sind nah an seinem Körper.",
+        // Copyright des Bildes
+        copyright: {
+            lang: "Fasanenterrine, Johann Joachim Kaendler, 1732 (Modell), 1774 (Ausformung), Porzellan, 44 x 29,5 x 25 cm,  4,2 kg, Meissen Porzellan-Museum, Bearbeitung des 3D-Models: Rudi Schubert.",
+            kurz: "© Meissen Porzellan-Stiftung, Bearbeitung des 3D-Models: Rudi Schubert."
+        },
+        alt: "Der dritte seltsame Gegenstand. Der Gegenstand ist weiß und sieht aus wie ein Vogel. Der Vogel sitzt. Er hat den Schwanz erhoben. Seine Flügel sind nah an seinem Körper.",
 
         // --------------------------------------------------
         // AUDIO
@@ -393,9 +408,14 @@ const gegenstaende = {
     // ==================================================
 
     4: {
-        titel: "4. Komischer Gegenstand",
+        titel: "4. Seltsamer Gegenstand",
         bild: "bilder/4_obj.png",
-        alt: "Der vierte komische Gegenstand. Der Gegenstand ist sehr bunt. Er sieht aus wie ein Hahn. Auf dem Hahn sitzt ein Mann. Der Mann trägt einen Hut und ein Kleid.",
+        // Copyright des Bildes
+        copyright: {
+            lang: "Chinese auf Hahn als Kanne, Kändler, Johann Joachim, 1737 (Modell), 1750 (Ausformung), Porzellan, 19,5 x 13 x 17 cm, Meissen Porzellan-Stiftung, Bearbeitung des 3D Modells: Anastasiia Vasiutina.",
+            kurz: "© Meissen Porzellan-Stiftung, Bearbeitung des 3D Modells: Anastasiia Vasiutina."
+        },
+        alt: "Der vierte seltsame Gegenstand. Der Gegenstand ist sehr bunt. Er sieht aus wie ein Hahn. Auf dem Hahn sitzt ein Mann. Der Mann trägt einen Hut und ein Kleid.",
 
         // --------------------------------------------------
         // AUDIO
@@ -522,14 +542,20 @@ const gegenstaende = {
     },
 
 
+
     // ==================================================
     // 5. GEGENSTAND
     // ==================================================
 
     5: {
-        titel: "5. Komischer Gegenstand",
+        titel: "5. Seltsamer Gegenstand",
         bild: "bilder/5_obj.png",
-        alt: "Der fünfte komische Gegenstand. Der Gegenstand ist rechteckig. Der Gegenstand ist gelb. Oben ist ein Deckel auf dem Gegenstand. Auf dem Gegenstand sind Blumen.",
+        // Copyright des Bildes
+        copyright: {
+            lang: "Sängerin (Affenkapelle), Johann Joachim Kändler/ Peter Reinicke, 1765 (Modell), um 1880 (Ausformung), Porzellan, Aufglasurfarben und Gold , 13 x 8 x 5,5 cm, Meissen Porzellan-Stiftung, Bearbeitung des 3D Modells: Emily-Sophie Witt.",
+            kurz: "© Meissen Porzellan-Stiftung, Bearbeitung des 3D Modells: Emily-Sophie Witt."
+        },
+        alt: "Der fünfte seltsame Gegenstand. Der Gegenstand ist ein Affe. Der Affe trägt ein Kleid. Der Affe hält ein Buch mit Noten in der Hand. Der Affe singt.",
 
         // --------------------------------------------------
         // AUDIO
@@ -540,59 +566,6 @@ const gegenstaende = {
             raten: "audio/Leda_raten.wav",
             andere: "audio/Leda_5_andere.wav",
             richtig: "audio/Leda_5_richtig.wav"
-        },
-
-        // --------------------------------------------------
-        // ANDERE MENSCHEN DENKEN
-        // --------------------------------------------------
-
-        andere: `
-            <strong><u>Andere Menschen denken:</u></strong><br />
-            Der Gegenstand ist:<br />
-            - eine Flasche für Parfüm<br />
-            - eine Vase für Blumen<br />
-            - ein Fass für Tinte<br />
-            - eine Dose für Gewürze
-        `,
-
-        // --------------------------------------------------
-        // RICHTIGE ANTWORT
-        // --------------------------------------------------
-
-        richtig: `
-            <p>
-                <strong><u>Richtig ist:</u></strong><br />
-                Der Gegenstand ist auch eine
-                <strong>Tee·dose</strong>.
-            </p>
-        `,
-
-        // --------------------------------------------------
-        // KEINE WEITEREN INFORMATIONEN
-        // --------------------------------------------------
-
-        info: []
-    },
-
-
-    // ==================================================
-    // 6. GEGENSTAND
-    // ==================================================
-
-    6: {
-        titel: "6. Komischer Gegenstand",
-        bild: "bilder/6_obj.png",
-        alt: "Der sechste komische Gegenstand. Der Gegenstand ist ein Affe. Der Affe trägt ein Kleid. Der Affe hält ein Buch mit Noten in der Hand. Der Affe singt.",
-
-        // --------------------------------------------------
-        // AUDIO
-        // --------------------------------------------------
-
-        audio: {
-            einleitung: "audio/Leda_navi_andere.wav",
-            raten: "audio/Leda_raten.wav",
-            andere: "audio/Leda_6_andere.wav",
-            richtig: "audio/Leda_6_richtig.wav"
         },
 
         // --------------------------------------------------
@@ -629,7 +602,7 @@ const gegenstaende = {
                 </p>
 
                 <img
-                    src="bilder/6_1.jpg"
+                    src="bilder/5_1.jpg"
                     alt="Die Figur von einem Affen steht auf einem Tisch. Der Affe trägt ein Kleid. Der Affe hält ein Buch mit Noten in der Hand. Der Affe singt.">
 
             </div>
@@ -643,7 +616,7 @@ const gegenstaende = {
 
         info: [
             {
-                audio: "audio/Leda_6_weitereInfos.wav",
+                audio: "audio/Leda_5_weitereInfos.wav",
 
                 inhalt: `
                     <p>
@@ -651,7 +624,7 @@ const gegenstaende = {
 
                         Der Gegenstand ist wirklich eine Deko·figur.<br />
 
-                        Sie ist aber komisch.<br />
+                        Sie ist aber seltsam.<br />
 
                         Weil: Sie zeigt einen <strong>Affen</strong>
                         in einem Kleid.<br />
@@ -664,7 +637,7 @@ const gegenstaende = {
                         <br />
 
                         Vor langer Zeit mögen Menschen Bilder und Figuren
-                        von Affen.<br />
+                        von Affen.<br /><br/>
 
                         Die Affen tragen die Kleidung von Menschen.<br />
 
@@ -685,7 +658,7 @@ const gegenstaende = {
                             <br />
 
                             <img
-                                src="bilder/6_2.jpg"
+                                src="bilder/5_2.jpg"
                                 alt="Viele Figuren von Affen stehen auf einem Tisch. Der erste Affe tanzt. Der zweite Affe spielt eine Gitarre. Der dritte Affe malt. Der vierte Affe trägt schöne Kleidung.">
 
                         </div>
