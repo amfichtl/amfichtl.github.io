@@ -235,7 +235,7 @@ if (gegenstandInhalt) {
 
         if (id > 1) {
 
-            // Bei Gegenstand 2 bis 6:
+            // Bei Gegenstand 2 bis 5:
             // zum vorherigen Gegenstand.
             navigation += `
                 <a href="gegenstand.html?id=${id - 1}">
@@ -273,9 +273,9 @@ if (gegenstandInhalt) {
         // PFEIL RECHTS
         // --------------------------------------------------
 
-        if (id < 6) {
+        if (id < 5) {
 
-            // Bei Gegenstand 1 bis 5:
+            // Bei Gegenstand 1 bis 4:
             // zum nächsten Gegenstand.
             navigation += `
                 <a href="gegenstand.html?id=${id + 1}">
@@ -292,7 +292,7 @@ if (gegenstandInhalt) {
 
         } else {
 
-            // Bei Gegenstand 6:
+            // Bei Gegenstand 5:
             // weiter zum Glossar.
             navigation += `
                 <a href="glossar.html">
@@ -414,11 +414,26 @@ if (gegenstandInhalt) {
                         <strong><u>Was ist das?</u></strong><br /><br />
                     </p>
 
-                    <img
-                        class="gegenstand"
-                        src="${gegenstand.bild}"
-                        alt="${gegenstand.alt}">
+                    <div class="gegenstand-bild">
 
+                        <img
+                            class="gegenstand"
+                            src="${gegenstand.bild}"
+                            alt="${gegenstand.alt}">
+
+                        <details class="bild-copyright">
+
+                            <summary>
+                                ${gegenstand.copyright.kurz}
+                            </summary>
+
+                            <div class="copyright-details">
+                                ${gegenstand.copyright.lang}
+                            </div>
+
+                        </details>
+
+                    </div>
                 </div>
 
             </div>
